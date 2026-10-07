@@ -2490,7 +2490,7 @@ const handleSignup = async (event) => {
 
                 <small>
                   Make sure FastAPI is running on
-                  http://127.0.0.1:8000
+                  https://ai-routex-backend.onrender.com
                 </small>
               </div>
 
