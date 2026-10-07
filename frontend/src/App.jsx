@@ -277,7 +277,7 @@ function NavigationPanel({
   const fetchLatestVehicleLocation = async () => {
     try {
       const response = await fetch(
-        "http://127.0.0.1:8001/api/v1/vehicle/location/latest"
+        "https://ai-routex-backend.onrender.com/api/v1/vehicle/location/latest"
       );
 
       if (!response.ok) return;
@@ -323,7 +323,7 @@ function NavigationPanel({
 
         setVehicleTracking(true);
 
-        fetch("http://127.0.0.1:8001/api/v1/vehicle/location", {
+        fetch("https://ai-routex-backend.onrender.com/api/v1/vehicle/location", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -1038,7 +1038,7 @@ function App() {
   const verifySession = async () => {
     try {
       const response = await fetch(
-        "http://127.0.0.1:8001/api/v1/auth/me",
+        "https://ai-routex-backend.onrender.com/api/v1/auth/me",
         {
           method: "GET",
           credentials: "include",
@@ -1083,7 +1083,7 @@ const handleSignup = async (event) => {
     setSignupError("");
 
     const response = await fetch(
-      "http://127.0.0.1:8001/api/v1/auth/signup",
+      "https://ai-routex-backend.onrender.com/api/v1/auth/signup",
       {
         method: "POST",
         headers: {
@@ -1134,7 +1134,7 @@ const handleSignup = async (event) => {
   try {
     setLoginError("");
 
-    const response = await fetch("http://127.0.0.1:8001/api/v1/auth/login", {
+    const response = await fetch("https://ai-routex-backend.onrender.com/api/v1/auth/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -1339,7 +1339,7 @@ const handleSignup = async (event) => {
 
     try {
       const response = await fetch(
-        "http://127.0.0.1:8001/api/v1/get-route",
+        "https://ai-routex-backend.onrender.com/api/v1/get-route",
         {
           method: "POST",
           headers: {
