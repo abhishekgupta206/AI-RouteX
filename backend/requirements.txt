@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+joblib
+pandas
+scikit-learn
+SQLAlchemy
+argon2-cffi
+email-validator
